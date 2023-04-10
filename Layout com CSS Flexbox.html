@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Flexbox</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <style>
+        * {
+margin: 0px;
+padding: 0px;
+}
+
+html {
+height: 100%;
+}
+
+body { 
+background-color: #dd4f91;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+sans-serif;
+height: 100%;
+display: flex;
+flex: 1;
+justify-content: center;
+align-items: center;
+}
+
+.profile {
+background-color: #e7e7e7;
+border-radius: 5px;
+box-shadow: rgba(10, 7, 10, 0.986) 0px 8px 24px;
+display: flex;
+flex-direction: column;
+padding: 10px 10px;
+width: 300px;
+}
+
+.profile-resume {
+align-items: center;
+border-bottom: 1px solid rgb(14, 13, 13);
+display: flex;
+flex-direction: column;
+margin-bottom: 8px;
+}
+
+.profile-resume-image-cropper {
+border-radius: 50%;
+height: 100px;
+margin-bottom: 8px;
+overflow: hidden;
+position: relative;
+width: 100px;
+}
+
+.profile-resume-image {
+display: inline;
+height: 100%;
+width: auto;
+}
+
+.profile-resume-username {
+font-size: large;
+margin-bottom: 8px;
+}
+
+.profile-bio {
+border-bottom: 1px solid rgb(7, 6, 6);
+margin-bottom: 8px;
+}
+
+.profile-bio-paragraph {
+font-size: small;
+margin-bottom: 8px;
+}
+
+.profile-nav {
+list-style: none;
+}
+
+.profile-nav-link {
+font-size: small;
+}
+    </style>
+    <body>
+     
+        <div class="profile">
+            <div class="profile-resume">
+                <div class="profile-resume-image-cropper">
+                    <img class="profile-resume-image" src="https://i.pravatar.cc/150?img=40" />
+                </div>
+                <h2 class="profile-resume-username">NaNa-CatSitter</h2>
+            </div>
+            <div class="profile-bio">
+                <p class="profile-bio-paragraph">Como cat sitter, sou apaixonada por gatos e 
+                    dedico meu tempo e energia para cuidar dos felinos dos meus clientes, 
+                    garantindo que eles estejam felizes e saudáveis em sua ausência. 
+                    Com minha experiência e conhecimento sobre comportamento felino, 
+                    estou preparada para lidar com quaisquer situações que possam surgir durante a minha visita.</p>
+
+                <p class="profile-bio-paragraph">Além de fornecer comida e água frescas, 
+                    limpar as caixas de areia e brincar com os gatinhos, também sou capaz de administrar medicações orais e subcutâneas, 
+                    se necessário. Sempre me comunico com os donos dos gatos durante minha visita, 
+                    enviando fotos e atualizações para que possam ter tranquilidade sabendo que seus amados felinos estão em boas mãos. 
+                    Se você está procurando um cat sitter confiável e carinhoso, eu sou a pessoa certa para o trabalho.</p>
+            </div>
+            <ul class="profile-nav">
+                <li>
+                    <a class="profile-nav-link" href="#">GitHub</a>
+                </li>
+                <li>
+                    <a class="profile-nav-link" href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a class="profile-nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
